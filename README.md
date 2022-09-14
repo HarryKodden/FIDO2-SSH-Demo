@@ -1,6 +1,6 @@
 # FIDO2-SSH-Demo
 
-This demo s the use of a FIDO2 authentication to SSH
+This demo demonstrates the use of a FIDO2 authentication to connect via SSH
 
 ## Usage:
 
