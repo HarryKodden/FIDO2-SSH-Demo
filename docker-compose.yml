@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+
+  ssh:
+    build: build
+    volumes:
+      - ./key/my-ecdsa-sk.pub:/root/.ssh/authorized_keys 
+    ports:
+      - 2222:22
+    command:
+      - /bin/sh
+      - -c
+      - |
+        chown -R root:root ~/.ssh/
+        /usr/local/sbin/sshd -D
